@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+
+    <script
+      src="https://kit.fontawesome.com/f90068558c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>SMK STRADA JAKARTA</title>
+  </head>
+
+  <body
+    style="
+      background-image: url(assets/bg_bggenerator_com.png);
+      background-size: cover;
+    "
+  >
+    <!-- <div class="splash">
+      <h1 class="splash-text" data-aos="fade-right" data-aos-duration="200">
+        Hello Guys! <br />  
+        Welcome to the club
+      </h1>
+      <img class="astronaut-dabbing" src="assets/astronaut1.png" alt="" />
+      <img class="astronaut-takeoff" src="assets/astronaut2.png" alt="" />
+    </div> -->
+
+    <header>
+      <div class="header">
+        <img class="header-icon" src="assets/smk strada 3.png" alt=""/>
+        <h3 class="title"><a href="index.html">SMK STRADA JAKARTA</a></h3>
+        <nav>
+          <a href="project.html">Jurusan</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">Tentang Kami</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="jumbotron">
+        <div class="jumbotron">
+          <h1
+            class="jumbotron-title"
+            onmouseover="changeTitle(this)"
+            onmouseout="changeTitleBack(this)"
+          >
+            
+          </h1>
+          <div class="header-flex">
+            <div>
+              <h2
+                class="jumbotron-text" 
+                data-aos="fade-down"
+                data-aos-duration="2000"
+                data-aos-delay="2500"
+                data-aos-once="true"
+              >
+                Apakah kamu mencari sekolah setelah lulus SMP?
+                <br />
+                Ayo daftar di SMK STRADA JAKARTA
+                <span style="color: #f4a261">Belajar dengan dunia industri</span>
+              </h2>
+              <div class="mini-text-flex">
+                <p class="mini-text">Ayo daftar disini</p>
+                <button id="icon-up" onclick="changeText()">
+                  <i class="far fa-hand-point-up"></i>
+                </button>
+                <button id="icon-down" class="icon-down">
+                  <i class="far fa-hand-point-down"></i>
+                </button>
+              </div>
+            </div>
+            <div>
+              <img
+                onmouseover="changeImage(this)"
+                onmouseout="changeImageBack(this)"
+                class="jumbotron-img"
+                src="assets/img-header.png"
+                alt=""
+                width="700"
+                height="auto"
+                data-aos="fade-down"
+                data-aos-duration="2000"
+                data-aos-delay="2500"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="slider" class="section-slider">
+        <div class="image-slider">
+          <div class="slide active">
+            <img src="assets/pra paskah.jpeg" alt="" />
+            <div class="slide-text">
+              <h2>Pra Paskah.</h2>
+              <p>
+                SMK STRADA MENYAMBUT PRA PASKAH DENGAN MISA BERSAMA DI GEREJA St. Alfonsus
+              </p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="assets/kemenkumham.jpg" alt="" />
+            <div class="slide-text">
+              <h2>Seminar kemenkumham</h2>
+              <p>
+              Penyuluhan Hukum Dalam Rangka Pembinaan Karakter Siswa Oleh KEMENKUMHAM
+              </p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="assets/hari guru.jpg" alt="" />
+            <div class="slide-text">
+              <h2>Hari Guru</h2>
+              <p>Perayaan Hari Guru Di SMK STRADA</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="assets/pemenang quiziz 2.jpeg" alt="" />
+            <div class="slide-text">
+              <h2>Pemenang Quiziz</h2>
+              <p>Saat di ujung acara KEMENKUMHAM mengadakan acara Quiziz.</p>
+            </div>
+          </div>
+
+          <div class="slide">
+            <img src="assets/praktek tp.jpg" alt="" />
+            <div class="slide-text">
+              <h2>Prakrek kejuruan</h2>
+              <p>Di smk starad selain mendapat pelajaran teori mendapat juga pelajaran praktek.</p>
+            </div>
+          </div>
+
+          <div class="navigation">
+            <div class="slider-btn active"></div>
+            <div class="slider-btn"></div>
+            <div class="slider-btn"></div>
+            <div class="slider-btn"></div>
+            <div class="slider-btn"></div>
+          </div>
+        </div>
+      </section>
+
+      <div class="main-content">
+        <!-- <aside>
+          <div class="profile">
+            <h3 class="aside-title">It's Cobee</h3>
+            <img
+              class="profile-picture"
+              src="assets/cobee.png"
+              alt="Cobee"
+              width="100px"
+              height="auto"
+            />
+            <div class="toggle">
+              <button class="btn" id="green">
+                <i class="fa fa-thumbs-up fa-lg"></i>
+              </button>
+              <button class="btn" id="red">
+                <i class="fa fa-thumbs-down fa-lg"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="search-tags-container">
+            <div class="input-tag">
+              <h3 class="aside-title">Search here</h3>
+              <input id="myInput" type="text" placeholder="Search..." />
+              <span class="addBtn" onclick="newElement()">Search</span>
+            </div>
+
+            <ul id="myUL" class="search-tags-list">
+              <li class="search-tags-item">HTML</li>
+              <li class="search-tags-item">Code</li>
+            </ul>
+          </div>
+          
+        </aside> -->
+        <div class="content">
+          <article id="my-project">
+            <h3 class="article-title">Jurusan</h3>
+            <div class="project-container">
+              <div class="project">
+                <img
+                  src="assets/Tip gambar.jpg"
+                  alt=""
+                  width="300px"
+                  height="210px"
+                />
+                <h4 class="project-title">Teknik Informatika Pemograman</h4>
+                <p class="project-description">
+                  Di jurusan ini diajarkan cara membuat website,aplikasi dan data-base
+                </p>
+              </div>
+
+              <div class="project">
+                <img
+                  src="assets/mekatronika.jpg"
+                  alt=""
+                  width="300px"
+                  height="210px"
+                />
+                <h4 class="project-title">Teknik Mekatronika</h4>
+                <p class="project-description">
+                Teknik Mekatronika adalah suatu disiplin ilmu teknik yang mengombinasikan sinergi dari Teknik Mesin, Teknik Elektronika
+                / Listrik
+                </p>
+              </div>
+            </div>
+
+            <div class="project-container">
+              <div class="project">
+                <img
+                  src="assets/praktek tp.jpg"
+                  alt=""
+                  width="450px"
+                  height="210px"
+                />
+                <h4 class="project-title">Teknik Pemesinan</h4>
+                <p class="project-description">
+                  Mengoperasikan mesin – mesin perkakas Konvensional,CNC ( Computer Numerical Control ). Mesin dengan kontrol numerik,Pengelasan dan Fabrikasi logam. Membaca dan menggambar manual
+                </p>
+              </div>
+              <div class="project">
+                <img
+                  src="assets/tbsm.jpg"
+                  alt=""
+                  width="450px"
+                  height="210px"
+                />
+                <h4 class="project-title">Teknik Bisnis Sepeda Motor</h4>
+                <p class="project-description">
+                Jurusan TBSM (Teknik dan Bisnis Sepeda Motor) dibuka di SMK Strada pada Juli 2013 sudah menghasilkan berbagai alumni,
+                baik yang melanjutkan di perguruan tinggi negeri dan swasta serta bekerja baik menjadi mekanik professional maupun di
+                perusahaan lainnya.
+                </p>
+              </div>
+            </div>
+          </article>
+          <article id="video">
+            <div class="item-video">
+              <h3 class="article-title">Profile SMK STRADA JAKARTA</h3>
+            <iframe width="1000" height="500" src="https://www.youtube.com/embed/FT5rJOOBBmA" title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+
+              <h3 class="article-title">HUT 54Th SMK STRADA JAKARTA</h3>
+              <iframe width="1000" height="500" src="https://www.youtube.com/embed/I2gRK3lw0fY" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            </div>
+          </article>
+          <article id="maps">
+            <div class="maps">
+              <h3 class="article-title">Location</h3>
+              <div class="location">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15867.18933109909!2d106.83127637694983!3d-6.157892278665911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5ed304c7ad9%3A0x87d183a16f164fcd!2sSMK%20STM%20Strada!5e0!3m2!1sid!2sid!4v1678952565423!5m2!1sid!2sid"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="maps-text">
+                  <!-- <h3>Timedoor Coding Academy</h3>
+                                <p>Timedoor Coding Academy adalah bagian dari PT Timedoor Indonesia, <br>
+                                tempat penulis belajar konsep programming sehingga bisa membuat Blog ini.</p> -->
+                </div>
+              </div>
+            </div>
+          </article>
+          <div class="audio">
+            <audio controls>
+              <source src="" />
+            </audio>
+          </div>
+        </div>
+        <!-- <aside>
+                <div>
+                    <h3>What is Coding?</h3>
+                    <iframe class="video" width="200" height="auto" src="https://www.youtube.com/embed/XMZFUnAgOqs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h3>Coding is Not Difficult !</h3>
+                    <iframe width="200" height="auto" src="https://www.youtube.com/embed/hb7Q33ysCwI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </aside> -->
+      </div>
+    </main>
+    <footer>
+      <div class="main-footer">
+        <h3 class="info-top">SMK STRADA JAKARTA</h3>
+        <div class="social-media">
+          <i class="fab fa-instagram-square"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-facebook-square"></i>
+          <i class="fas fa-envelope"></i>
+        </div>
+        <p class="info-center">
+          Copyright &copy; 2023. SMK STRADA JAKARTA. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <!-- <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script> -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
